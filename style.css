@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#container{
+    display:flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
+    background-color: ghostwhite;
+    border-radius: 8px;
+    gap: 16px;
+    border: black solid;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+}
+
+button{
+    padding: 20px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    border: solid rgb(121, 118, 118);
+    padding: 12px;
+    border-radius: 8px;
+}
+
+#delete {
+    padding-left: 45px;
+    padding-right: 45px;
+    font-weight: bold;
+}
+
+input{
+    font-size: 18px;
+    padding: 14px;
+
+}
