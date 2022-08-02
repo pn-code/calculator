@@ -9,8 +9,12 @@ function subtract(num1, num2) {
 }
 
 function divide(num1, num2) {
+    if (num2 == 0){
+        return "Error! Cannot divide by 0."
+    } else {
     let result = num1 / num2
     return result //.toFixed(6);
+} 
 }
 
 function multiply(num1, num2) {
