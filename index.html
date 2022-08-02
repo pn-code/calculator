@@ -13,9 +13,11 @@
 
     <div class="title">Simple Calculator</div>
 
-    <div>
-        <input>
+    <div class="display-container">
+    <div id='prev-display'>prev display</div>  
+    <div id='display'>123456789</div>
     </div>
+    
 
     <div class="buttons1">
         <button id="clear">CLEAR</button>
@@ -23,31 +25,31 @@
     </div>
 
     <div>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>/</button>
+        <button id="number-button" class="number7">7</button>
+        <button id="number-button" class="number8">8</button>
+        <button id="number-button" class="number9">9</button>
+        <button onclick="storeValues()" id="operator" class="divide">/</button>
     </div>
 
     <div>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>*</button>
+        <button id="number-button" class="number4">4</button>
+        <button id="number-button" class="number5">5</button>
+        <button id="number-button" class="number6">6</button>
+        <button onclick="storeValues()" id="operator" class="multiply">*</button>
     </div>
     
     <div>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>-</button>
+        <button id="number-button" class="number1">1</button>
+        <button id="number-button" class="number2">2</button>
+        <button id="number-button" class="number3">3</button>
+        <button onclick="storeValues()" id="operator" class="subtract">-</button>
     </div>
 
     <div>
-        <button>0</button>
-        <button>.</button>
-        <button>+</button>
-        <button>=</button>
+        <button id="number-button" class="number0">0</button>
+        <button id="number-button" class="decimal">.</button>
+        <button onclick="storeValues()" id="number-button" class="addition">+</button>
+        <button id="operator" class="equal">=</button>
     </div>
 </div>
     <script src="script.js"></script>

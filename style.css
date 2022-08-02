@@ -44,8 +44,28 @@ button{
     font-weight: bold;
 }
 
-input{
+#display{
     font-size: 18px;
     padding: 14px;
+    text-align: right;
+    background-color: white;
+    height: 30px;
+    border: grey solid;
+}
 
+#prev-display{
+    font-size: 18px;
+    padding: 14px;
+    text-align: right;
+    background-color: white;
+    height: 30px;
+    border: grey solid;
+
+}
+
+.display-container{
+    display: flex;
+    flex-direction: column;
+    border: black solid;
+    gap: 0px;
 }
