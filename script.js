@@ -1,7 +1,7 @@
 //OPERATION FUNCTIONS
 
 function add(num1, num2) {
-    return parseInt(num1) + parseInt(num2)
+    return parseFloat(num1) + parseFloat(num2)
 }
 
 function subtract(num1, num2) {
@@ -22,7 +22,6 @@ function multiply(num1, num2) {
     return result //.toFixed(6)
 }
 
-
 //OPERATE FUNCTION
 
 function operate(num1, num2, operator){
@@ -42,6 +41,7 @@ function operate(num1, num2, operator){
 
 const buttons = Array.from(document.querySelectorAll('button'));
 const displayValue = document.getElementById('display');
+const decimal = /[.]/
 
 let num1;
 let num2;
@@ -97,6 +97,14 @@ buttons.map(button => {
                 prevDisplayValue.innerText += " " + displayValue.innerText;
                 operate(num1, num2, operator)
                 break;
+            case '.':
+                if (decimal.test(displayValue.innerText)){
+                    return;
+                }else if (decimal.test(displayValue.innerText) === false){
+                    displayValue.innerText += e.target.innerText
+                }
+                break;
+
             default:
                 displayValue.innerText += e.target.innerText
                 break;
